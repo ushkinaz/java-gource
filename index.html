@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Java Gource by ushkinaz</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Java Gource</h1>
+        <p>Extracting java classes changelog from git - for using in gource visualisation</p>
+
+        <p class="view"><a href="https://github.com/ushkinaz/java-gource">View the Project on GitHub <small>ushkinaz/java-gource</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ushkinaz/java-gource/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ushkinaz/java-gource/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ushkinaz/java-gource">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="java-gource" class="anchor" href="#java-gource"><span class="octicon octicon-link"></span></a>Java Gource</h1>
+
+<p>This script extracts java classes changelog from git - for using in <a href="https://code.google.com/p/gource/">gource</a> visualisation.
+Instead of showing tree of files, <a href="https://code.google.com/p/gource/wiki/CustomLogFormat">custom log</a> output from this script will show a tree of Java classes, using packages as folders.</p>
+
+<p>The script expects that your repository contains modules with standard maven-like structure, it looks for java files located at:</p>
+
+<ul>
+<li>*/src/main/java</li>
+<li>*/src/test/java</li>
+</ul><p>Usage, from top of your git repo:</p>
+
+<blockquote>
+<p>java-gource.sh  | gource --log-format custom -</p>
+</blockquote>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ushkinaz">ushkinaz</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
